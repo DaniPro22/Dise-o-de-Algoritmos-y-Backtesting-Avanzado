@@ -10,7 +10,7 @@
     "backtest_end_data": "2026-01-30"
   },
   "paths": {
-    "input_parquet": "C:\\Users\\dgall\\Downloads\\sp500_history.parquet",
+    "input_parquet": "data\\raw\\sp500_history.parquet",
     "canonical_parquet": "data\\processed\\sp500_canonical.parquet",
     "benchmark_parquet": "data\\raw\\spy_yfinance.parquet",
     "quality_json": "reports\\data_quality_n1.json",
@@ -26,8 +26,8 @@
     "audit_price": "unadjusted_close"
   },
   "traceability": {
-    "run_ts_utc": "2026-02-17T17:34:41.341009+00:00",
-    "input_parquet": "C:\\Users\\dgall\\Downloads\\sp500_history.parquet",
+    "run_ts_utc": "2026-02-17T18:18:28.891764+00:00",
+    "input_parquet": "data\\raw\\sp500_history.parquet",
     "input_candidates": [
       "data\\raw\\sp500_history.parquet",
       "C:\\Users\\dgall\\Downloads\\sp500_history.parquet"
@@ -35,12 +35,12 @@
     "out_canonical": "data\\processed\\sp500_canonical.parquet",
     "out_spy": "data\\raw\\spy_yfinance.parquet",
     "versions": {
-      "python": "3.14.2",
+      "python": "3.13.5",
       "platform": "Windows-11-10.0.26200-SP0",
-      "numpy": "2.4.2",
-      "pandas": "3.0.0",
-      "pyarrow": "23.0.1",
-      "yfinance": "1.2.0"
+      "numpy": "2.1.3",
+      "pandas": "2.2.3",
+      "pyarrow": "19.0.0",
+      "yfinance": "1.1.0"
     },
     "spy_source": "yfinance_download"
   }
