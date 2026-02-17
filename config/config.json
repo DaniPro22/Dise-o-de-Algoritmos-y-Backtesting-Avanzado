@@ -1,0 +1,47 @@
+{
+  "project": "diseno_algoritmos_y_backtesting_avanzado",
+  "params": {
+    "initial_capital": 250000,
+    "backtest_start": "2015-01-01",
+    "benchmark_ticker": "SPY",
+    "universe_rule": "in_sp500_point_in_time_last_13_months",
+    "transaction_fee_rate": 0.0023,
+    "min_fee_per_order": 23.0,
+    "backtest_end_data": "2026-01-30"
+  },
+  "paths": {
+    "input_parquet": "data\\raw\\sp500_history.parquet",
+    "canonical_parquet": "data\\processed\\sp500_canonical.parquet",
+    "benchmark_parquet": "data\\raw\\spy_yfinance.parquet",
+    "quality_json": "reports\\data_quality_n1.json",
+    "quality_csv": "reports\\data_quality_n1_checks.csv",
+    "coverage_csv": "reports\\data_quality_n1_coverage.csv"
+  },
+  "price_conventions": {
+    "signals_price": "close",
+    "execution_prices": [
+      "open",
+      "close"
+    ],
+    "audit_price": "unadjusted_close"
+  },
+  "traceability": {
+    "run_ts_utc": "2026-02-17T18:18:28.891764+00:00",
+    "input_parquet": "data\\raw\\sp500_history.parquet",
+    "input_candidates": [
+      "data\\raw\\sp500_history.parquet",
+      "C:\\Users\\dgall\\Downloads\\sp500_history.parquet"
+    ],
+    "out_canonical": "data\\processed\\sp500_canonical.parquet",
+    "out_spy": "data\\raw\\spy_yfinance.parquet",
+    "versions": {
+      "python": "3.13.5",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "numpy": "2.1.3",
+      "pandas": "2.2.3",
+      "pyarrow": "19.0.0",
+      "yfinance": "1.1.0"
+    },
+    "spy_source": "yfinance_download"
+  }
+}
